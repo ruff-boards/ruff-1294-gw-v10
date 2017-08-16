@@ -1,0 +1,22 @@
+{
+    "name": "ruff-1294-gw-v10",
+    "version": "0.1.0",
+    "description": "Ruff 1294 GW V1.0 Metadata",
+    "author": "Nanchao Inc.",
+    "dependencies": {
+        "rap-tm4c1294": "*"
+    },
+    "ruff": {
+        "session-format": {
+            "serial": {
+                "type": "string",
+                "description": "designate device serial",
+                "required": true,
+                "visible": true
+            }
+        },
+        "dependencies": {
+            "led-gpio": "^3.0.0"
+        }
+    }
+}
