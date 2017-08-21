@@ -8,6 +8,8 @@
         "an-1": "ADC/an-1"
     },
     "outputs": {
+        "UART0": "UART0/uart",
+        "UART1": "UART1/uart",
         "UART3": "UART3/uart",
         "RS485-0": "RS485-0/rs485",
         "RS485-1": "RS485-1/rs485",
@@ -373,6 +375,42 @@
                         "level": "low",
                         "activeLow": false
                     }
+                }
+            }
+        },
+        {
+            "id": "UART0",
+            "model": "ruff-uart",
+            "driver": "mcu-uart",
+            "inputs": {
+                "device": {
+                    "type": "string",
+                    "args": {
+                        "path": "/dev/ttyS1"
+                    }
+                }
+            },
+            "outputs": {
+                "uart": {
+                    "type": "uart"
+                }
+            }
+        },
+        {
+            "id": "UART1",
+            "model": "ruff-uart",
+            "driver": "mcu-uart",
+            "inputs": {
+                "device": {
+                    "type": "string",
+                    "args": {
+                        "path": "/dev/ttyS2"
+                    }
+                }
+            },
+            "outputs": {
+                "uart": {
+                    "type": "uart"
                 }
             }
         },
