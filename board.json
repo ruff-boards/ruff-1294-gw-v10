@@ -30,29 +30,6 @@
             }
         },
         {
-            "id": "power",
-            "outputs": {
-                "vdd-0": {
-                    "type": "power",
-                    "args": {
-                        "voltage": "24v"
-                    }
-                },
-                "vdd-1": {
-                    "type": "power",
-                    "args": {
-                        "voltage": "24v"
-                    }
-                },
-                "vdd-2": {
-                    "type": "power",
-                    "args": {
-                        "voltage": "24v"
-                    }
-                }
-            }
-        },
-        {
             "id": "PK4",
             "model": "ruff-gpio",
             "driver": "mcu-gpio",
@@ -313,7 +290,7 @@
                     "bind": "PM4/gpio",
                     "args": {
                         "direction": "out",
-                        "level": "high",
+                        "level": "low",
                         "activeLow": true
                     }
                 }
@@ -329,7 +306,7 @@
                     "bind": "PM5/gpio",
                     "args": {
                         "direction": "out",
-                        "level": "high",
+                        "level": "low",
                         "activeLow": true
                     }
                 }
@@ -345,7 +322,7 @@
                     "bind": "PM6/gpio",
                     "args": {
                         "direction": "out",
-                        "level": "high",
+                        "level": "low",
                         "activeLow": true
                     }
                 }
@@ -361,7 +338,7 @@
                     "bind": "PQ1/gpio",
                     "args": {
                         "direction": "out",
-                        "level": "high",
+                        "level": "low",
                         "activeLow": true
                     }
                 }
@@ -377,7 +354,7 @@
                     "bind": "PQ2/gpio",
                     "args": {
                         "direction": "out",
-                        "level": "high",
+                        "level": "low",
                         "activeLow": true
                     }
                 }
@@ -487,13 +464,7 @@
                 "referenceVoltage": 3.3,
                 "pinConfig" : {
                     "an-0" : 0,
-                    "an-1" : 1,
-                    "an-2" : 2,
-                    "an-3" : 3,
-                    "an-4" : 4,
-                    "an-5" : 5,
-                    "an-6" : 6,
-                    "an-7" : 7
+                    "an-1" : 1
                 }
             },
             "inputs": {
@@ -509,24 +480,6 @@
                     "type": "adc"
                 },
                 "an-1": {
-                    "type": "adc"
-                },
-                "an-2": {
-                    "type": "adc"
-                },
-                "an-3": {
-                    "type": "adc"
-                },
-                "an-4": {
-                    "type": "adc"
-                },
-                "an-5": {
-                    "type": "adc"
-                },
-                "an-6": {
-                    "type": "adc"
-                },
-                "an-7": {
                     "type": "adc"
                 }
             }
