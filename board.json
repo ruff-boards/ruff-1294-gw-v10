@@ -422,7 +422,7 @@
                 "device": {
                     "type": "string",
                     "args": {
-                        "path": "/dev/ttyS1"
+                        "path": "/dev/ttyS3"
                     }
                 }
             },
@@ -440,7 +440,7 @@
                 "device": {
                     "type": "string",
                     "args": {
-                        "path": "/dev/ttyS2"
+                        "path": "/dev/ttyS4"
                     }
                 },
                 "gpio": {
@@ -471,7 +471,7 @@
                 "device": {
                     "type": "string",
                     "args": {
-                        "path": "/dev/ttyS3"
+                        "path": "/dev/ttyS5"
                     }
                 },
                 "gpio": {
