@@ -1,6 +1,6 @@
 {
     "name": "ruff-1294-gw-v10",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Ruff 1294 GW V1.0 Metadata",
     "author": "Nanchao Inc.",
     "dependencies": {
